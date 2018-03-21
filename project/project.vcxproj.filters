@@ -51,12 +51,15 @@
     <ClCompile Include="htmlRequest.cpp">
       <Filter>Html Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Controll.cpp">
+    <ClCompile Include="Control.cpp">
       <Filter>Html Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Control.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -78,18 +81,12 @@
     <ClInclude Include="HtmlRequest.h">
       <Filter>Html Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Controll.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="build-QtGui-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug\ui_mainwindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="build-untitled2-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug\ui_mainwindow.h">
+    <ClInclude Include="ui_mainwindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="untitled2\mainwindow.ui">
+    <QtUic Include="untitled\mainwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

@@ -9,14 +9,13 @@
 #include <codecvt>
 using namespace std;
 
-class HtmlParser{
+class HtmlParser {
 public:
-	wstring title[5];
-	wstring url[5];
+	wstring url[20];
 	int cnt;
 
 	void searchParsing();
-	void resultParsing();
+	int resultParsing();
 	void showInfo();
 	wstring wordParsing(wstring _str);
 

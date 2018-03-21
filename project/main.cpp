@@ -4,6 +4,7 @@
 #include <QLineEdit>
 #include "mainwindow.h"
 #include <qlabel.h>
+
 /* ----- Html Header ----- */
 #include "ExtractArticleText.h"
 #include <locale>
@@ -15,17 +16,13 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
     MainWindow w;
+
+	remove("image.jpg");
+	remove("result.html");
+	remove("search.html");
+
     w.show();
 	
-
-    /* 버튼 예제 */
-    /*QPushButton *btn = new QPushButton("검색색",0);
-    btn->show();
-
-    QObject::connect(btn,SIGNAL(clicked()),&a,SLOT(quit()));*/
-
-    /* 입력 예제 */
-
 
     return a.exec();
 }

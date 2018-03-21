@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
     <Keyword>Qt4VSv1.0</Keyword>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -64,9 +64,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <ReferencePath>C:\Users\LeeJay\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(ReferencePath)</ReferencePath>
-    <IncludePath>C:\Users\LeeJay\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;C:\Users\LeeJay\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\LeeJay\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>C:\Users\LEE JAY\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(ReferencePath)</ReferencePath>
+    <IncludePath>C:\Users\LEE JAY\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;C:\Users\LEE JAY\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\LEE JAY\Desktop\ESDL\project_final\project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
@@ -118,7 +118,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controll.cpp" />
+    <ClCompile Include="Control.cpp" />
     <ClCompile Include="ExtractArticleText.cpp" />
     <ClCompile Include="HtmlParser.cpp" />
     <ClCompile Include="htmlRequest.cpp" />
@@ -135,14 +135,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="build-untitled2-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug\ui_mainwindow.h" />
-    <ClInclude Include="Controll.h" />
+    <QtMoc Include="Control.h" />
     <ClInclude Include="ExtractArticleText.h" />
     <ClInclude Include="HtmlParser.h" />
     <ClInclude Include="HtmlRequest.h" />
+    <ClInclude Include="ui_mainwindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="untitled2\mainwindow.ui" />
+    <QtUic Include="untitled\mainwindow.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

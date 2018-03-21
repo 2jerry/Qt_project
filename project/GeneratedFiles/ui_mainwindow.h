@@ -13,13 +13,12 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCommandLinkButton>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -31,15 +30,8 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QLineEdit *lineEdit;
+    QListWidget *listWidget;
     QPushButton *pushButton;
-    QSplitter *splitter_3;
-    QSplitter *splitter_2;
-    QSplitter *splitter;
-    QCommandLinkButton *commandLinkButton;
-    QCommandLinkButton *commandLinkButton_2;
-    QCommandLinkButton *commandLinkButton_3;
-    QCommandLinkButton *commandLinkButton_4;
-    QCommandLinkButton *commandLinkButton_5;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -48,62 +40,29 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(382, 328);
+        MainWindow->resize(260, 195);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(20, 10, 261, 31));
+        lineEdit->setGeometry(QRect(20, 10, 171, 25));
+        QFont font;
+        font.setFamily(QStringLiteral("Agency FB"));
+        font.setPointSize(10);
+        lineEdit->setFont(font);
+        listWidget = new QListWidget(centralWidget);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setGeometry(QRect(20, 40, 221, 101));
+        QFont font1;
+        font1.setPointSize(14);
+        listWidget->setFont(font1);
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(290, 10, 51, 31));
-        splitter_3 = new QSplitter(centralWidget);
-        splitter_3->setObjectName(QStringLiteral("splitter_3"));
-        splitter_3->setGeometry(QRect(10, 50, 361, 205));
-        splitter_3->setOrientation(Qt::Vertical);
-        splitter_2 = new QSplitter(splitter_3);
-        splitter_2->setObjectName(QStringLiteral("splitter_2"));
-        splitter_2->setOrientation(Qt::Vertical);
-        splitter = new QSplitter(splitter_2);
-        splitter->setObjectName(QStringLiteral("splitter"));
-        QFont font;
-        font.setPointSize(8);
-        splitter->setFont(font);
-        splitter->setOrientation(Qt::Vertical);
-        splitter_2->addWidget(splitter);
-        splitter_3->addWidget(splitter_2);
-        commandLinkButton = new QCommandLinkButton(splitter_3);
-        commandLinkButton->setObjectName(QStringLiteral("commandLinkButton"));
-        QFont font1;
-        font1.setFamily(QStringLiteral("Segoe UI"));
-        font1.setPointSize(8);
-        commandLinkButton->setFont(font1);
-        commandLinkButton->setIconSize(QSize(20, 20));
-        splitter_3->addWidget(commandLinkButton);
-        commandLinkButton_2 = new QCommandLinkButton(splitter_3);
-        commandLinkButton_2->setObjectName(QStringLiteral("commandLinkButton_2"));
-        commandLinkButton_2->setFont(font1);
-        commandLinkButton_2->setIconSize(QSize(20, 20));
-        splitter_3->addWidget(commandLinkButton_2);
-        commandLinkButton_3 = new QCommandLinkButton(splitter_3);
-        commandLinkButton_3->setObjectName(QStringLiteral("commandLinkButton_3"));
-        commandLinkButton_3->setFont(font1);
-        commandLinkButton_3->setIconSize(QSize(20, 20));
-        splitter_3->addWidget(commandLinkButton_3);
-        commandLinkButton_4 = new QCommandLinkButton(splitter_3);
-        commandLinkButton_4->setObjectName(QStringLiteral("commandLinkButton_4"));
-        commandLinkButton_4->setFont(font1);
-        commandLinkButton_4->setIconSize(QSize(20, 20));
-        splitter_3->addWidget(commandLinkButton_4);
-        commandLinkButton_5 = new QCommandLinkButton(splitter_3);
-        commandLinkButton_5->setObjectName(QStringLiteral("commandLinkButton_5"));
-        commandLinkButton_5->setFont(font1);
-        commandLinkButton_5->setIconSize(QSize(20, 20));
-        splitter_3->addWidget(commandLinkButton_5);
+        pushButton->setGeometry(QRect(200, 10, 41, 25));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 382, 26));
+        menuBar->setGeometry(QRect(0, 0, 260, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -120,13 +79,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        lineEdit->setText(QString());
         pushButton->setText(QApplication::translate("MainWindow", "\352\262\200\354\203\211", nullptr));
-        commandLinkButton->setText(QString());
-        commandLinkButton_2->setText(QString());
-        commandLinkButton_3->setText(QString());
-        commandLinkButton_4->setText(QString());
-        commandLinkButton_5->setText(QString());
     } // retranslateUi
 
 };

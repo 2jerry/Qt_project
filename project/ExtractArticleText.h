@@ -2,7 +2,7 @@
 #include "HtmlParser.h"
 #include "HtmlRequest.h"
 #include <algorithm>
-
+#include <qstring.h>
 
 #ifndef __EXTRACTARTICLETEXT_H__
 #define __EXTRACTARTICLETEXT_H__
@@ -15,12 +15,11 @@ public:
 	void titleText(); // 
 	void mainText();
 	void loadImage();
-	//void saveImage(int idx);
 
 
 	HtmlParser htmlUrl;
 	std::wstring title;
-	std::wstring main_txt;
+	QString main_txt;
 	std::wstring img;
 };
 
